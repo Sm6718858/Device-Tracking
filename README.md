@@ -20,7 +20,7 @@ If a user disconnects, their marker is automatically removed.
 ## 🛠️ Tech Stack
 - **Frontend**: Leaflet.js, Vanilla JS, EJS templates, CSS  
 - **Backend**: Node.js, Express.js, Socket.IO  
-- **Deployment**: Render (or Railway/Heroku alternative)  
+- **Deployment**: Render
 
 ---
 
@@ -44,22 +44,16 @@ Copy code
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/map.git
+git clone https://github.com/Sm6718858/Device-Tracking.git
 cd map
 2️⃣ Install dependencies
-bash
-Copy code
+
 npm install
 3️⃣ Run in development mode
-bash
-Copy code
+
 npm run dev
 4️⃣ Run in production mode
-bash
-Copy code
+
 npm start
 Server will start at:
-
-arduino
-Copy code
 http://localhost:3000
