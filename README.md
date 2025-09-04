@@ -23,21 +23,6 @@ If a user disconnects, their marker is automatically removed.
 - **Deployment**: Render
 
 ---
-
-## 📂 Project Structure
-project/
-├─ public/ # Static files
-│ ├─ css/ # Styles
-│ └─ js/ # Client-side scripts
-├─ views/ # EJS templates
-│ └─ index.ejs
-├─ server.js # Express + Socket.IO backend
-├─ package.json
-└─ README.md
-
-yaml
-Copy code
-
 ---
 
 ## ⚡ Installation & Setup
