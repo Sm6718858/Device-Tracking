@@ -29,13 +29,15 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('user connected:', socket.id);
+    const username = socket.handshake.query.username || "Anonymous";
+    socket.username = username;
+    console.log('user connected:', socket.username);
     socket.on('send-location',function(data){
-        io.emit('receive-location',{id:socket.id,...data})
+        io.emit('receive-location',{id:socket.id,username:socket.username,...data})
     })
     socket.on('disconnect', () => {
-        io.emit('user-disconnected',socket.id)
-        console.log('user disconnected:', socket.id);
+        io.emit('user-disconnected',{id:socket.id,username:socket.username})
+        console.log('user disconnected:', socket.username);
     });
 });
 
